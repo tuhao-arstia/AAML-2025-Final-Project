@@ -178,10 +178,10 @@ inline void ConvPerChannel(
         }
     }
 
-    // Tiling parameters for CFU matmul (oringal KMN=150,128,100)
+    // Tiling parameters for CFU matmul 
     const int TILE_K = 150;
-    const int TILE_M = 128; // TILE_M must be multiple of 4
-    const int TILE_N = 100; // TILE_N must be multiple of 4
+    const int TILE_M = 200; // TILE_M must be multiple of 4
+    const int TILE_N = 128; // TILE_N must be multiple of 4
     // ---------------------------------------------------------------------------
     // Task 2: Send KMN and input_offset Parameter
     // ---------------------------------------------------------------------------
